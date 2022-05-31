@@ -7,12 +7,14 @@ const { normalize: normalizeAddress } = require('eth-sig-util');
 
 const SimpleKeyring = require('eth-simple-keyring');
 const HdKeyring = require('@metamask/eth-hd-keyring');
+const SnapKeyring = require('@lavamoat/snap-keyring');
 
-const keyringTypes = [SimpleKeyring, HdKeyring];
+const keyringTypes = [SimpleKeyring, HdKeyring, SnapKeyring];
 
 const KEYRINGS_TYPE_MAP = {
   HD_KEYRING: 'HD Key Tree',
   SIMPLE_KEYRING: 'Simple Key Pair',
+  SNAP_KEYRING: 'Snap Keyring',
 };
 /**
  * Strip the hex prefix from an address, if present

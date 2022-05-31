@@ -31,6 +31,7 @@
     "lint:fix": "yarn lint:eslint --fix && yarn lint:misc --write"
   },
   "dependencies": {
+    "@lavamoat/snap-keyring": "https://github.com/LavaMoat/snap-keyring/",
     "@metamask/bip39": "^4.0.0",
     "@metamask/eth-hd-keyring": "^4.0.2",
     "browser-passworder": "^2.0.3",
